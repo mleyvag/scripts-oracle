@@ -1,3 +1,4 @@
+SET SERVEROUTPUT ON
 DECLARE
   CURSOR c_codes IS SELECT DISTINCT job_id FROM employees;
   CURSOR c_employees (code VARCHAR2) IS SELECT * FROM employees WHERE job_id = code;
